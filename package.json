@@ -107,7 +107,7 @@
     "classnames": "^2.2.0",
     "cozy-bar": "3.0.0-beta14",
     "cozy-client-js": "0.2.0",
-    "cozy-ui": "3.0.0-beta19",
+    "cozy-ui": "3.0.0-beta39",
     "date-fns": "^1.26.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-import": "^2.2.0",

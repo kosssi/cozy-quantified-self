@@ -1,15 +1,16 @@
 import React from 'react'
-import { I18n } from '../lib/I18n'
+import { I18n } from 'cozy-ui/react/I18n'
 
 import App from './App'
 
-const context = window.context
-const lang = document.documentElement.getAttribute('lang') || 'en'
+const root = document.querySelector('[role=application]')
+const data = root.dataset
+const lang = data.cozyLocale || document.documentElement.getAttribute('lang') || 'en'
 
-const Root = function () {
-  return <I18n context={context} lang={lang}>
+const Root = () => (
+  <I18n lang={lang} dictRequire={(lang) => require(`../locales/${lang}`)}>
     <App />
   </I18n>
-}
+)
 
 export default Root
