@@ -1,0 +1,30 @@
+{
+  "name": "Quantified Self",
+  "slug": "Quantified Self",
+  "icon": "icon.svg",
+  "description": "This application tracking anything of your life, to optimise task or just for fun.",
+  "category": "<APP_CATEGORY>",
+  "version": "3.0.0",
+  "licence": "AGPL-3.0",
+  "source": "https://github.com/kosssi/cozy-quantified-self.git@build",
+  "developer": {
+    "name": "Cozy",
+    "url": "https://cozy.io"
+  },
+  "default_locale": "en",
+  "locales": {},
+  "routes": {
+    "/": {
+      "folder": "/",
+      "index": "index.html",
+      "public": false
+    }
+  },
+  "permissions": {
+    "apps": {
+      "description": "Required by the cozy-bar to display the icons of the apps",
+      "type": "io.cozy.apps",
+      "verbs": ["GET"]
+    }
+  }
+}
